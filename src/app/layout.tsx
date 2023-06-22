@@ -28,12 +28,12 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body
-        className={`${roboto.variable} ${robotoMono.variable} bg-newgray-900 text-base font-normal text-newgray-300`}
+        className={`${roboto.variable} ${robotoMono.variable} bg-newgray-900 font-sans text-base font-normal text-newgray-300`}
       >
-        <main className="mx-auto my-20 flex h-[calc(100vh-10rem)] max-w-[74rem] flex-col rounded-lg bg-newgray-800 p-10">
+        <div className="mx-auto my-20 flex h-[calc(100vh-10rem)] max-w-[74rem] flex-col rounded-lg bg-newgray-800 p-10">
           <Header />
           {children}
-        </main>
+        </div>
       </body>
     </html>
   )

@@ -2,8 +2,8 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-import { Timer, ScrollText } from 'lucide-react'
 import igniteLogo from '../assets/ignite-logo.svg'
+import { Timer, ScrollText } from 'lucide-react'
 import { usePathname } from 'next/navigation'
 
 export default function Header() {
@@ -20,7 +20,7 @@ export default function Header() {
           } flex h-12 w-12 items-center justify-center border-y-[3px] border-transparent transition-opacity hover:border-b-newgreen-500 focus:border-[3px] focus:border-newgreen-500 focus:outline-none`}
           href={'/'}
         >
-          <Timer height={24} width={24} />
+          <Timer size={24} />
         </Link>
         <Link
           title="histórico"
@@ -31,7 +31,7 @@ export default function Header() {
           } flex h-12 w-12 items-center justify-center border-y-[3px] border-transparent transition-opacity hover:border-b-newgreen-500 focus:border-[3px] focus:border-newgreen-500 focus:outline-none`}
           href={'/history'}
         >
-          <ScrollText height={24} width={24} />
+          <ScrollText size={24} />
         </Link>
       </nav>
     </header>
