@@ -1,4 +1,11 @@
+import { useContext } from 'react'
+import { useFormContext } from 'react-hook-form'
+import { CyclesContext } from '../page'
+
 export default function NewCycleForm() {
+  const { activeCycle } = useContext(CyclesContext)
+  const { register } = useFormContext()
+
   return (
     <div className="flex w-full flex-wrap items-center justify-center gap-2 text-lg font-bold">
       <label htmlFor="task">Vou trabalhar em</label>
