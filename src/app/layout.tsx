@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from './components/Header'
 import { Roboto, Roboto_Mono as RobotoMono } from 'next/font/google'
+import { CyclesContextProvider } from './contexts/CyclesContext'
 import './globals.css'
 
 const roboto = Roboto({
@@ -32,7 +33,7 @@ export default function RootLayout({
       >
         <div className="mx-auto my-20 flex h-[calc(100vh-10rem)] max-w-[74rem] flex-col rounded-lg bg-newgray-800 p-10">
           <Header />
-          {children}
+          <CyclesContextProvider>{children}</CyclesContextProvider>
         </div>
       </body>
     </html>
