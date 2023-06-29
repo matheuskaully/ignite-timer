@@ -18,7 +18,7 @@ const robotoMono = RobotoMono({
 export const metadata = {
   title: 'Ignite Timer',
   description:
-    'IgniteTimer is an application with a timer that helps users in carrying out tasks, reducing anxiety and increasing focus and concentration on tasks, avoiding wasted time and distractions',
+    'Ignite Timer is an application with a timer that helps users in carrying out tasks, reducing anxiety and increasing focus and concentration on tasks, avoiding wasted time and distractions',
 }
 
 export default function RootLayout({
